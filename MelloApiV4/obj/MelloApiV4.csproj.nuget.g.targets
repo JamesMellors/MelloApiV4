@@ -6,6 +6,6 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.9.10\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.9.10\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.azure.kubernetes.tools.targets\1.0.0\build\Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.azure.kubernetes.tools.targets\1.0.0\build\Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets.targets')" />
-    <Import Project="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.azure.services.appauthentication\1.0.1\build\Microsoft.Azure.Services.AppAuthentication.targets" Condition="Exists('C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.azure.services.appauthentication\1.0.1\build\Microsoft.Azure.Services.AppAuthentication.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.azure.services.appauthentication\1.0.3\build\Microsoft.Azure.Services.AppAuthentication.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.azure.services.appauthentication\1.0.3\build\Microsoft.Azure.Services.AppAuthentication.targets')" />
   </ImportGroup>
 </Project>

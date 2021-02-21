@@ -87,5 +87,10 @@ C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Micros
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\MelloApiV4.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\MelloApiV4.MvcApplicationPartsAssemblyInfo.cache

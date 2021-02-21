@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Configuration;
+
 
 namespace MelloApiV4
 {
@@ -110,6 +110,9 @@ namespace MelloApiV4
             {
                 endpoints.MapControllers();
             });
+
+
+
         }
 
         protected virtual void RegisterServices(IServiceCollection services)
