@@ -12,9 +12,19 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(Language)' == 'C#' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)microsoft.aspnetcore.azurekeyvault.hostingstartup\2.0.4\contentFiles\cs\netstandard2.0\_AssembyInfo.KeyVaultHostingStartup.cs" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.azurekeyvault.hostingstartup\2.0.4\contentFiles\cs\netstandard2.0\_AssembyInfo.KeyVaultHostingStartup.cs')">
+      <NuGetPackageId>Microsoft.AspNetCore.AzureKeyVault.HostingStartup</NuGetPackageId>
+      <NuGetPackageVersion>2.0.4</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Private>False</Private>
+      <Link>_AssembyInfo.KeyVaultHostingStartup.cs</Link>
+    </Compile>
+  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.9.10\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.9.10\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.azure.kubernetes.tools.targets\1.0.0\build\Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.azure.kubernetes.tools.targets\1.0.0\build\Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.azurekeyvault.hostingstartup\2.0.4\build\Microsoft.AspNetCore.AzureKeyVault.HostingStartup.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.azurekeyvault.hostingstartup\2.0.4\build\Microsoft.AspNetCore.AzureKeyVault.HostingStartup.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\jaytv\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.9.10</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>

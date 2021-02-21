@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace MelloApiV4
 {
@@ -62,14 +63,14 @@ namespace MelloApiV4
 
         protected virtual void RegisterConnectionsIfPresent(IServiceCollection services)
         {
-            var queriesConnectionStringOrError = QueriesConnectionString.Create("Data Source = mello.database.windows.net; initial catalog = MelloApiDatabase; user id = mello; password = "); //Configuration.QueriesConnectionString());
+            var queriesConnectionStringOrError = QueriesConnectionString.Create(Configuration["MelloDBConnString"]); //Configuration.QueriesConnectionString());
             if (queriesConnectionStringOrError.IsSuccess)
             {
                 QueriesConnectionString = queriesConnectionStringOrError.Value;
                 services.AddSingleton(QueriesConnectionString);
             }
 
-            var commandsConnectionStringOrError = CommandsConnectionString.Create("Data Source = mello.database.windows.net; initial catalog = MelloApiDatabase; user id = mello; password = "); //Configuration.CommandsConnectionString());
+            var commandsConnectionStringOrError = CommandsConnectionString.Create(Configuration["MelloDBConnString"]); //Configuration.CommandsConnectionString());
             if (commandsConnectionStringOrError.IsSuccess)
             {
                 CommandsConnectionString = commandsConnectionStringOrError.Value;
@@ -159,7 +160,7 @@ namespace MelloApiV4
         protected virtual void ConfigureStorage(IServiceCollection services)
         {
             services
-                .AddDbContext<ApplicationDbContext>(x => x.UseSqlServer("Data Source = mello.database.windows.net; initial catalog = MelloApiDatabase; user id = mello; password = "));//CommandsConnectionString.Value));
+                .AddDbContext<ApplicationDbContext>(x => x.UseSqlServer(CommandsConnectionString.Value));//CommandsConnectionString.Value));
         }
     }
 }

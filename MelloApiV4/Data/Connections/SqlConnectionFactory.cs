@@ -24,14 +24,14 @@ namespace MelloApiV4.Data.Connections
         {
             Gaurd.AgainstNull(_commandsConnectionString, nameof(_commandsConnectionString));
 
-            return new SqlConnection("Data Source = mello.database.windows.net;initial catalog=MelloApiDatabase;user id=mello;password=");//_commandsConnectionString.Value);
+            return new SqlConnection(_commandsConnectionString.Value);//_commandsConnectionString.Value); Data Source = mello.database.windows.net;initial catalog=MelloApiDatabase;user id=mello;password=
         }
 
         public DbConnection CreateSecondaryConnection()
         {
             Gaurd.AgainstNull(_queriesConnectionString, nameof(_queriesConnectionString));
 
-            return new SqlConnection("Data Source = mello.database.windows.net;initial catalog=MelloApiDatabase;user id=mello;password=");//_queriesConnectionString.Value);
+            return new SqlConnection(_queriesConnectionString.Value);//);
         }
     }
 }

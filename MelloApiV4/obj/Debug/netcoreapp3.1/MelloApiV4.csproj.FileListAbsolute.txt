@@ -77,5 +77,15 @@ C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\runtim
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Connected Services\Key Vault\ConnectedService.json
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.AzureKeyVault.HostingStartup.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Azure.KeyVault.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Azure.KeyVault.WebKey.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.AzureKeyVault.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\MelloApiV4.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\MelloApiV4.MvcApplicationPartsAssemblyInfo.cache
