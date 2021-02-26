@@ -4,12 +4,11 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
-COPY ["MelloApiV4.csproj", "MelloApiV4/"]
+COPY ["MelloApiV4/MelloApiV4.csproj", "MelloApiV4/"]
 
 RUN dotnet restore "MelloApiV4/MelloApiV4.csproj"
-WORKDIR "/src/MelloApiV4"
 COPY . .
-
+WORKDIR "/src/MelloApiV4"
 RUN dotnet build "MelloApiV4.csproj" -c Release -o /app/build
 
 FROM build AS publish
