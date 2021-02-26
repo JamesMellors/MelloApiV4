@@ -65,6 +65,10 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 8002 #CHANGE
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8002
+  # - port: 8002 #CHANGE
   selector:
     app: mello-api-v4
