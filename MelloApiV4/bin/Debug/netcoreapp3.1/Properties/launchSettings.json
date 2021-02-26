@@ -15,7 +15,7 @@
       "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONENABLED": "false",
-        "DB": "Data Source = mello.database.windows.net;initial catalog=MelloApiDatabase;user id=mello;password=Admin123",
+        "DB": "",
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONVAULT": "https://MelloApi-keyvault.vault.azure.net"
       }
@@ -34,10 +34,10 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/",
       "environmentVariables": {
         "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONENABLED": "false",
-        "DB": "Data Source = mello.database.windows.net;initial catalog=MelloApiDatabase;user id=mello;password=Admin123",
+        "DB": "test",
         "ACCESS_TOKEN": "test",
         "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONVAULT": "https://MelloApi-keyvault.vault.azure.net"
       },
