@@ -10,10 +10,10 @@ RUN dotnet restore "MelloApiV4/MelloApiV4.csproj"
 WORKDIR "/src/MelloApiV4"
 COPY . .
 
-RUN dotnet build "MelloApiV4.csproj" -c Release -o /app/build
+RUN dotnet build "MelloApiV4.csproj" -c Release -o /app/build/MelloApiV4
 
 FROM build AS publish
-RUN dotnet publish "MelloApiV4.csproj" -c Release -o /app/publish
+RUN dotnet publish "MelloApiV4.csproj" -c Release -o /app/publish/MelloApiV4
 
 FROM base AS final
 WORKDIR /app
