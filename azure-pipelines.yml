@@ -46,7 +46,7 @@ stages:
       inputs:
         buildType: 'current'
         artifactName: 'manifests'
-        itemPattern: '**/*.yaml'
+        itemPattern: '**/MelloApiV4/*.yaml'
         targetPath: '$(System.ArtifactsDirectory)'
     - task: KubernetesManifest@0
       inputs:
