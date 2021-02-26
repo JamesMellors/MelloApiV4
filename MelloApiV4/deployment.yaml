@@ -2,15 +2,15 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: MelloApiV4
-  name: MelloApiV4
+    app: mello-api-v4
+  name: mello-api-v4
   namespace: default
 spec:
   replicas: 1 #CHANGE
   minReadySeconds: 45
   selector:
     matchLabels:
-      app: MelloApiV4
+      app: mello-api-v4
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -19,11 +19,11 @@ spec:
   template:
     metadata:
       labels:
-        app: MelloApiV4
+        app: mello-api-v4
     spec:
       containers:
-      - name: MelloApiV4
-        image: jamesmellors/MelloApiV4
+      - name: mello-api-v4
+        image: jamesmellors/mello-api-v4
         env:
         - name: DB
           value: __DB__
@@ -59,12 +59,12 @@ apiVersion: v1
 kind: Service
 metadata:
   labels: #PODS
-    app: MelloApiV4
-  name: MelloApiV4
+    app: mello-api-v4
+  name: mello-api-v4
   namespace: default
 spec:
   type: ClusterIP
   ports:
   - port: 8002 #CHANGE
   selector:
-    app: MelloApiV4
+    app: mello-api-v4
