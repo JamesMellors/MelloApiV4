@@ -7,6 +7,7 @@
     <StartupObject></StartupObject>
     <ApplicationIcon />
     <OutputType>Library</OutputType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
