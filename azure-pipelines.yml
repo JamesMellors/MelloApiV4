@@ -20,7 +20,7 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'jm-docker-hub'
-        repository: 'jamesmellors/MelloApiV4'
+        repository: 'jamesmellors/mello-api-v4'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
@@ -54,4 +54,4 @@ stages:
         kubernetesServiceConnection: 'azure-kubernetes-connection'
         namespace: 'default'
         manifests: '$(System.ArtifactsDirectory)/MelloApiV4/deployment.yaml'
-        containers: 'jamesmellors/MelloApiV4:$(tag)'
+        containers: 'jamesmellors/mello-api-v4:$(tag)'
