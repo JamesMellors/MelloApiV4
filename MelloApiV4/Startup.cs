@@ -6,6 +6,7 @@ using MelloApiV4.Data;
 using MelloApiV4.Data.Connections;
 using MelloApiV4.Data.Entities.Translation;
 using MelloApiV4.Data.Repository;
+using MelloApiV4.Data.Repository.WordTranslations;
 using MelloApiV4.Queries;
 using MelloApiV4.Repository;
 using MelloApiV4.Response;
@@ -15,7 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using System;
 
 namespace MelloApiV4
 {
@@ -59,18 +60,19 @@ namespace MelloApiV4
             .AddMediatR(typeof(TestResult));
 
             services.AddControllers();
+
         }
 
         protected virtual void RegisterConnectionsIfPresent(IServiceCollection services)
         {
-            var queriesConnectionStringOrError = QueriesConnectionString.Create(Configuration["MelloDBConnString"]); //Configuration.QueriesConnectionString());
+            var queriesConnectionStringOrError = QueriesConnectionString.Create(Environment.GetEnvironmentVariable("DB")); //(Configuration["MelloDBConnString"]); //Configuration.QueriesConnectionString());
             if (queriesConnectionStringOrError.IsSuccess)
             {
                 QueriesConnectionString = queriesConnectionStringOrError.Value;
                 services.AddSingleton(QueriesConnectionString);
             }
 
-            var commandsConnectionStringOrError = CommandsConnectionString.Create(Configuration["MelloDBConnString"]); //Configuration.CommandsConnectionString());
+            var commandsConnectionStringOrError = CommandsConnectionString.Create(Environment.GetEnvironmentVariable("DB")); //Configuration.CommandsConnectionString());
             if (commandsConnectionStringOrError.IsSuccess)
             {
                 CommandsConnectionString = commandsConnectionStringOrError.Value;
@@ -123,6 +125,7 @@ namespace MelloApiV4
             // Singleton Classes
             services.AddSingleton(new System.Net.Http.HttpClient());
             services.AddScoped<ITranslationRepository, TranslationRepository>();
+            services.AddScoped<IWordTranslationsRepository, WordTranslationsRepository>();
 
             services.AddScoped<IActionResultFactory, ActionResultFactory>();
 

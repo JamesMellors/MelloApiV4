@@ -8,7 +8,7 @@ namespace MelloApiV4.Data
 {
     public class UserEntity : IdentityUser<int>, IEntity
     {
-        public static UserEntity Manager = new UserEntity("dashboardmanager@buxbo.com");
+        public static UserEntity Manager = new UserEntity("");
         public static string ManagerPassword = "";
 
         public bool IsAdmin { get; set; }

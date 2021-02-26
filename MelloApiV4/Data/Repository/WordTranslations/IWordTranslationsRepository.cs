@@ -9,5 +9,8 @@ namespace MelloApiV4.Data.Repository.WordTranslations
 {
     public interface IWordTranslationsRepository : IRepository<WordTranslationsEntity>
     {
+
+        Task<IEnumerable<WordTranslationsEntity>> GetAll();
+        Task<IEnumerable<WordTranslationsEntity>> GetGroup(int groupId);
     }
 }

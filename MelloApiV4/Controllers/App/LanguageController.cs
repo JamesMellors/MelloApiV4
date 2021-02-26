@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MediatR;
 using MelloApiV4.Queries;
+using MelloApiV4.Queries.Language;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -39,6 +40,30 @@ namespace MelloApiV4.Controllers.App
             var result = await _mediator.Send(query);
             return Json(result);
             //return _actionResultFactory.CreateResultFromResponseModel(result);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("GetAllTranslations")]
+        public async Task<IActionResult> GetAllTranslations([FromQuery] GetAllTranslations.Query query)
+        {
+            var result = await _mediator.Send(query);
+            return Json(result);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("GetTranslationsByGroup")]
+        public async Task<IActionResult> GetTranslationsByGroup([FromQuery] GetTranlsationsBasedOnGroup.Query query)
+        {
+            var result = await _mediator.Send(query);
+            return Json(result);
         }
 
     }
