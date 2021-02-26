@@ -16,6 +16,9 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
+    - task: Bash@3
+      inputs:
+        filePath: 'ls'
     - task: Docker@2
       displayName: Build an image
       inputs:
@@ -23,7 +26,6 @@ stages:
         repository: 'jamesmellors/MelloApiV4'
         command: 'buildAndPush'
         Dockerfile: '**/MelloApiV4/Dockerfile'
-        buildContext: '**/MelloApiV4'
         tags: '$(tag)'
     - task: CopyFiles@2
       inputs:
