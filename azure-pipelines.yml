@@ -6,6 +6,7 @@ pool:
 
 variables:
   tag: '$(Build.BuildId)'
+  database: '$(DB)'
 
 stages:
 - stage: Build
