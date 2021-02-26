@@ -22,7 +22,7 @@ stages:
         containerRegistry: 'jm-docker-hub'
         repository: 'jamesmellors/MelloApiV4'
         command: 'buildAndPush'
-        Dockerfile: '**/MelloApiV4/Dockerfile'
+        Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
     - task: CopyFiles@2
       inputs:
