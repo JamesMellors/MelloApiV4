@@ -17,8 +17,7 @@ stages:
       vmImage: 'ubuntu-latest'
     steps:
     - task: Bash@3
-      inputs:
-        filePath: 'ls'
+    - script: ls
     - task: Docker@2
       displayName: Build an image
       inputs:
