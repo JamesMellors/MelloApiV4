@@ -29,7 +29,7 @@ namespace MelloApiV4
 
         public IConfiguration Configuration { get; }
 
-        public TestsConnectionString TestsConnectionString { get; private set; }
+        //public TestsConnectionString TestsConnectionString { get; private set; }
         /// <summary>
         /// 
         /// </summary>
@@ -78,13 +78,6 @@ namespace MelloApiV4
                 CommandsConnectionString = commandsConnectionStringOrError.Value;
                 services.AddSingleton(CommandsConnectionString);
             }
-
-            /*  var testsConnectionStringOrError = TestsConnectionString.Create(Configuration.TestsCommandsConnectionString(), Configuration.TestsQueriesConnectionString());
-              if (testsConnectionStringOrError.IsSuccess)
-              {
-                  TestsConnectionString = testsConnectionStringOrError.Value;
-                  services.AddSingleton(TestsConnectionString);
-              }*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
