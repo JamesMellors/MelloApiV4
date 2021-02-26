@@ -23,7 +23,6 @@ stages:
         repository: 'jamesmellors/MelloApiV4'
         command: 'buildAndPush'
         Dockerfile: '**/MelloApiV4/Dockerfile'
-        buildContext: '**/MelloApiV4'
         tags: '$(tag)'
     - task: CopyFiles@2
       inputs:
