@@ -4,10 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <UserSecretsId>aa21f790-2ce8-47ff-985e-1a9bd82d6d60</UserSecretsId>
-    <StartupObject></StartupObject>
-    <ApplicationIcon />
-    <OutputType>Library</OutputType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <GenerateDependencyFile>true</GenerateDependencyFile> 
+   <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+   <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,14 +26,17 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="3.1.12" />
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="runtime.linux-x64.Microsoft.NETCore.App" Version="2.2.8" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+
   </ItemGroup>
 
   <ItemGroup>
-    <WCFMetadata Include="Connected Services" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
   </ItemGroup>
 
 

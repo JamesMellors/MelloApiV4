@@ -15,7 +15,7 @@
       "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONENABLED": "false",
-        "DB": "",
+        "DB": "test",
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONVAULT": "https://MelloApi-keyvault.vault.azure.net"
       }

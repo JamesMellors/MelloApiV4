@@ -7,7 +7,6 @@ C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\MelloA
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\MelloApiV4.RazorTargetAssemblyInfo.cache
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\staticwebassets\MelloApiV4.StaticWebAssets.Manifest.cache
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\staticwebassets\MelloApiV4.StaticWebAssets.xml
-C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\MelloApiV4.exe
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\MelloApiV4.deps.json
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\MelloApiV4.runtimeconfig.json
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\MelloApiV4.runtimeconfig.dev.json
@@ -92,5 +91,7 @@ C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Micros
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
-C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\MelloApiV4.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Debug\netcoreapp3.1\MelloApiV4.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\runtimes\linux-x64\lib\netcoreapp2.2\System.Collections.Immutable.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\runtimes\linux-x64\lib\netcoreapp2.2\System.ComponentModel.Annotations.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Debug\netcoreapp3.1\runtimes\linux-x64\lib\netcoreapp2.2\System.Diagnostics.DiagnosticSource.dll

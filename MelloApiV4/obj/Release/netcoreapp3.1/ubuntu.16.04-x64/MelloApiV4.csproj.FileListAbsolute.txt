@@ -1,0 +1,18 @@
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\appsettings.Development.json
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\appsettings.json
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\Connected Services\Key Vault\ConnectedService.json
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\libman.json
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\Properties\launchSettings.json
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\libhostpolicy.so
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\libhostfxr.so
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.deps.json
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\bin\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.pdb
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.csprojAssemblyReference.cache
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.AssemblyInfoInputs.cache
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.AssemblyInfo.cs
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.RazorTargetAssemblyInfo.cache
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Release\netcoreapp3.1\ubuntu.16.04-x64\staticwebassets\MelloApiV4.StaticWebAssets.Manifest.cache
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Release\netcoreapp3.1\ubuntu.16.04-x64\staticwebassets\MelloApiV4.StaticWebAssets.xml
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.dll
+C:\Users\jaytv\source\repos\MelloApiV4\MelloApiV4\obj\Release\netcoreapp3.1\ubuntu.16.04-x64\MelloApiV4.pdb
