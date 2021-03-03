@@ -6,7 +6,7 @@ metadata:
   name: mello-api-v4
   namespace: default
 spec:
-   replicas: 1 #CHANGE
+   #replicas: 1 #CHANGE
   minReadySeconds: 45
   selector:
     matchLabels:
