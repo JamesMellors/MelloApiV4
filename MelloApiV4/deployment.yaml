@@ -31,6 +31,13 @@ spec:
         ports:
         - name: liveness-port
           containerPort: 80
+        resources: #CHANGE
+          requests:
+            cpu: 100m
+            memory: 512Mi
+          limits:
+            cpu: 500m
+            memory: 1024Mi
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
 ---
@@ -42,10 +49,10 @@ metadata:
   name: mello-api-v4
   namespace: default
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
-  - port: 80
-     # targetPort: 8002
+  - port: 8002
+    targetPort: 80
   # - port: 8002 #CHANGE
   selector:
     app: mello-api-v4
