@@ -6,7 +6,7 @@ metadata:
   name: mello-api-v4
   namespace: default
 spec:
-  # replicas: 1 #CHANGE
+   replicas: 1 #CHANGE
   minReadySeconds: 45
   selector:
     matchLabels:
@@ -29,12 +29,8 @@ spec:
           value: $(database)
         imagePullPolicy: IfNotPresent
         ports:
-        - name: liveness-port
-          containerPort: 80
+        - containerPort: 80
         resources: #CHANGE
-          requests:
-            cpu: 100m
-            memory: 512Mi
           limits:
             cpu: 500m
             memory: 1024Mi
