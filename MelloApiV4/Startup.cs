@@ -87,9 +87,9 @@ namespace MelloApiV4
             {
                 app.UseDeveloperExceptionPage();
             }
-          
-            //app.UseHttpsRedirection();
 
+            //app.UseHttpsRedirection();
+            app.UsePathBase($"/api");
             app.UseRouting();
 
             app.UseStaticFiles();
@@ -108,7 +108,7 @@ namespace MelloApiV4
 
            // if (!string.IsNullOrWhiteSpace(pathBase))
             //{
-                app.UsePathBase($"/api");
+
             //}
 
 
