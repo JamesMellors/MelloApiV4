@@ -58,9 +58,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - name: http
-      protocol: TCP
-      port: 80
+  - port: 80
      # targetPort: 8002
   # - port: 8002 #CHANGE
   selector:
