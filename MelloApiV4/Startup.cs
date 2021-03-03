@@ -106,6 +106,11 @@ namespace MelloApiV4
                 endpoints.MapControllers();
             });
 
+           // if (!string.IsNullOrWhiteSpace(pathBase))
+            //{
+                app.UsePathBase($"/api");
+            //}
+
 
 
         }
