@@ -45,7 +45,7 @@ metadata:
   name: mello-api-v4
   namespace: default
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 8002
     targetPort: 80
