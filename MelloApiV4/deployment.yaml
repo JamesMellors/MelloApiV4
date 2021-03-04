@@ -30,10 +30,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
-        resources: #CHANGE
-          limits:
-            cpu: 500m
-            memory: 1024Mi
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
 ---
