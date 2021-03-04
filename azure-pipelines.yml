@@ -49,6 +49,14 @@ stages:
         artifactName: 'manifests'
         itemPattern: '**/MelloApiV4/*.yaml'
         targetPath: '$(System.ArtifactsDirectory)'
+    - task: qetza.replacetokens.replacetokens-task.replacetokens@3
+      displayName: Replace tokens in **/*
+      inputs:
+        rootDirectory: $(System.ArtifactsDirectory)/MelloApiV4
+        targetFiles: '**/*.yml'
+        keepToken: true
+        tokenPrefix: __
+        tokenSuffix: __
     - task: KubernetesManifest@0
       inputs:
         action: 'deploy'
