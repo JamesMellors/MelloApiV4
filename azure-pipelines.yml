@@ -53,7 +53,7 @@ stages:
       displayName: Replace tokens in **/*
       inputs:
         rootDirectory: $(System.ArtifactsDirectory)/MelloApiV4
-        targetFiles: '**/*.yml'
+        targetFiles: '**/*.yaml'
         keepToken: true
         tokenPrefix: __
         tokenSuffix: __
