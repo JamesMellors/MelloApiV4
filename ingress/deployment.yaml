@@ -13,11 +13,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - www.james-mellors.com
     - james-mellors.com
     secretName: tls-secret
   rules:
-  - host: www.james-mellors.com
+  - host: james-mellors.com
   - http:
       paths:
       - backend:
