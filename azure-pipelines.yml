@@ -64,3 +64,9 @@ stages:
         namespace: 'default'
         manifests: '$(System.ArtifactsDirectory)/MelloApiV4/deployment.yaml'
         containers: 'jamesmellors/mello-api-v4:$(tag)'
+    - task: KubernetesManifest@0
+      inputs:
+        action: 'deploy'
+        kubernetesServiceConnection: 'azure-kubernetes-connection'
+        namespace: 'default'
+        manifests: '$(System.ArtifactsDirectory)/ingress/deployment.yaml'

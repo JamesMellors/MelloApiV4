@@ -29,10 +29,6 @@ namespace MelloApiV4
 
         public IConfiguration Configuration { get; }
 
-        //public TestsConnectionString TestsConnectionString { get; private set; }
-        /// <summary>
-        /// 
-        /// </summary>
         public CommandsConnectionString CommandsConnectionString { get; private set; }
         /// <summary>
         /// 
