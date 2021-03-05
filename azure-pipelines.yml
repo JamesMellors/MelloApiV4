@@ -49,6 +49,12 @@ stages:
         artifactName: 'manifests'
         itemPattern: '**/MelloApiV4/*.yaml'
         targetPath: '$(System.ArtifactsDirectory)'
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        buildType: 'current'
+        artifactName: 'manifests'
+        itemPattern: '**/*.yaml'
+        targetPath: '$(System.ArtifactsDirectory)'    
     - task: qetza.replacetokens.replacetokens-task.replacetokens@3
       displayName: Replace tokens in **/*
       inputs:
