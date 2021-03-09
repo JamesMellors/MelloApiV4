@@ -10,6 +10,7 @@ using MelloApiV4.Data.Repository.WordTranslations;
 using MelloApiV4.Queries;
 using MelloApiV4.Repository;
 using MelloApiV4.Response;
+using MelloApiV4.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,8 @@ namespace MelloApiV4
         /// </summary>
         public QueriesConnectionString QueriesConnectionString { get; private set; }
 
+        public ComputerVisionEndpoint ComputerVisionEndpoint { get; private set; }
+        public ComputerVisionKey ComputerVisionKey { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -73,6 +76,20 @@ namespace MelloApiV4
             {
                 CommandsConnectionString = commandsConnectionStringOrError.Value;
                 services.AddSingleton(CommandsConnectionString);
+            }
+
+            var computerVisionEndpointOrError = ComputerVisionEndpoint.Create("https://mello-image-recognition.cognitiveservices.azure.com/");//Environment.GetEnvironmentVariable("ComputerVisionEndpoint"));
+            if (computerVisionEndpointOrError.IsSuccess)
+            {
+                ComputerVisionEndpoint = computerVisionEndpointOrError.Value;
+                services.AddSingleton(ComputerVisionEndpoint);
+            }
+
+            var computerVisionKeyOrError = ComputerVisionKey.Create("");//Environment.GetEnvironmentVariable("ComputerVisionKey"));
+            if (computerVisionKeyOrError.IsSuccess)
+            {
+                ComputerVisionKey = computerVisionKeyOrError.Value;
+                services.AddSingleton(ComputerVisionKey);
             }
         }
 
@@ -120,11 +137,12 @@ namespace MelloApiV4
             services.AddSingleton(new System.Net.Http.HttpClient());
             services.AddScoped<ITranslationRepository, TranslationRepository>();
             services.AddScoped<IWordTranslationsRepository, WordTranslationsRepository>();
+            services.AddScoped<IComputerVisionService, ComputerVisionService>();
 
             services.AddScoped<IActionResultFactory, ActionResultFactory>();
 
             services.AddTransient<IConnectionFactory, SqlConnectionFactory>();
-
+            services.AddScoped<IComputerVisionFactory, ComputerVisionFactory>();
             // Database
             services.AddScoped(typeof(IDatabaseWriter<>), typeof(DapperDatabaseWriter<>));
             services.AddScoped(typeof(IDatabaseReader<>), typeof(DapperDatabaseReader<>));
