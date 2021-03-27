@@ -25,7 +25,7 @@ namespace MelloApiV4.Controllers.App
         /// <param name="query"></param>
         /// <returns></returns>
         [HttpGet("GetImageInfo")]
-        public async Task<IActionResult> GetTranslationsByGroup([FromQuery] GetImageInfo.Query query)
+        public async Task<IActionResult> GetTranslationsByGroup([FromBody] GetImageInfo.Query query)
         {
             var result = await _mediator.Send(query);
             return Json(result);
